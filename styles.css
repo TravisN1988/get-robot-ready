@@ -547,6 +547,34 @@ ul, ol {
 
 
 /* ============================================
+   RESOURCES SECTION
+   ============================================ */
+.resources__intro {
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resources__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+}
+
+.resources__coming-soon {
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-text-subtle);
+  font-style: italic;
+  grid-column: 1 / -1;
+}
+
+
+/* ============================================
    CTA BAND
    ============================================ */
 .cta-band {
