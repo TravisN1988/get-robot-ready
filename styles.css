@@ -16,28 +16,32 @@
    ============================================ */
 :root {
   /* -----------------------------
-     COLOR SYSTEM
+     COLOR SYSTEM (Based on RobotReady logo)
      ----------------------------- */
-  --color-background: #0d0d0d;         /* Near-black charcoal */
-  --color-panel: #1a1a1a;              /* Slightly lighter than background */
-  --color-panel-elevated: #242424;     /* For hover states, cards */
+  --color-background: #0a0e14;         /* Deep dark blue-black */
+  --color-panel: #131a24;              /* Dark blue panel */
+  --color-panel-elevated: #1a2432;     /* Elevated panel (hover states) */
 
-  --color-text: #f5f5f5;               /* Near-white */
-  --color-text-muted: #8a8a8a;         /* Gray for secondary text */
-  --color-text-subtle: #666666;        /* Subtle gray for hints */
+  --color-text: #f0f4f8;               /* Near-white with cool tint */
+  --color-text-muted: #8a9bae;         /* Blue-gray for secondary text */
+  --color-text-subtle: #5a6a7a;        /* Subtle blue-gray for hints */
 
-  --color-border: #2a2a2a;             /* Subtle gray borders */
-  --color-border-hover: #3a3a3a;       /* Border on hover */
+  --color-border: #1e2a3a;             /* Dark blue-gray borders */
+  --color-border-hover: #2a3a4a;       /* Border on hover */
 
-  --color-accent: #c45a2c;             /* Burnt orange - primary CTA */
-  --color-accent-hover: #d46a3c;       /* Accent hover state */
-  --color-accent-active: #b44a1c;      /* Accent active/pressed state */
+  --color-accent: #e05a2b;             /* Warm orange - primary CTA */
+  --color-accent-hover: #f06a3b;       /* Accent hover state */
+  --color-accent-active: #c04a1b;      /* Accent active/pressed state */
 
-  --color-secondary: #3a4a5a;          /* Cool-toned subtle accent */
-  --color-secondary-hover: #4a5a6a;    /* Secondary hover */
+  --color-brand: #2d9cdb;              /* Logo blue - for highlights */
+  --color-brand-light: #56b3e6;        /* Lighter brand blue */
+  --color-brand-dark: #1a7ab8;         /* Darker brand blue */
 
-  --color-focus: #5a9fd4;              /* Focus ring - accessible blue */
-  --color-focus-outline: rgba(90, 159, 212, 0.5); /* Focus ring glow */
+  --color-secondary: #2d9cdb;          /* Brand blue as secondary */
+  --color-secondary-hover: #56b3e6;    /* Secondary hover */
+
+  --color-focus: #2d9cdb;              /* Focus ring - brand blue */
+  --color-focus-outline: rgba(45, 156, 219, 0.4); /* Focus ring glow */
 
   /* -----------------------------
      TYPOGRAPHY
@@ -251,11 +255,11 @@ ul, ol {
 .btn--secondary {
   background-color: transparent;
   color: var(--color-text);
-  border-color: var(--color-border);
+  border-color: var(--color-text-muted);
 }
 
 .btn--secondary:hover {
-  border-color: var(--color-text-muted);
+  border-color: var(--color-brand);
   background-color: var(--color-panel);
 }
 
@@ -273,7 +277,7 @@ ul, ol {
   left: 0;
   right: 0;
   height: var(--nav-height);
-  background-color: rgba(13, 13, 13, 0.95);
+  background-color: rgba(10, 14, 20, 0.95);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: var(--border-width) solid var(--color-border);
@@ -299,6 +303,11 @@ ul, ol {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-tight);
+}
+
+.nav__logo-img {
+  height: 36px;
+  width: auto;
 }
 
 .nav__links {
@@ -345,16 +354,11 @@ ul, ol {
   right: 0;
   bottom: 0;
   z-index: -1;
-  /*
-    HERO BACKGROUND IMAGE:
-    Replace the gradient below with your own background image.
-    Example: background-image: linear-gradient(to bottom, rgba(13,13,13,0.85), rgba(13,13,13,0.95)), url('assets/hero-bg.jpg');
-  */
   background-image:
-    linear-gradient(to bottom, rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.95)),
-    linear-gradient(135deg, var(--color-panel) 0%, var(--color-background) 50%, var(--color-secondary) 100%);
+    linear-gradient(to bottom, rgba(10, 14, 20, 0.75), rgba(10, 14, 20, 0.92)),
+    url('assets/hero-bg.png');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
 
 .hero__content {

@@ -132,35 +132,40 @@ Teams seeking readiness feedback loops and clear pilot success criteria for cust
 
 All visual properties are controlled via CSS custom properties in `styles.css`. Edit values in the `:root` block only.
 
-### Color System
+### Color System (Based on RobotReady Logo)
 
 ```css
-/* Background colors */
---color-background: #0d0d0d;         /* Main page background (near-black) */
---color-panel: #1a1a1a;              /* Cards, sections (slightly lighter) */
---color-panel-elevated: #242424;     /* Hover states on panels */
+/* Background colors - deep blue-black tones */
+--color-background: #0a0e14;         /* Deep dark blue-black */
+--color-panel: #131a24;              /* Dark blue panel */
+--color-panel-elevated: #1a2432;     /* Elevated panel (hover states) */
 
-/* Text colors */
---color-text: #f5f5f5;               /* Primary text (near-white) */
---color-text-muted: #8a8a8a;         /* Secondary text (gray) */
---color-text-subtle: #666666;        /* Tertiary text (darker gray) */
+/* Text colors - cool white/gray tones */
+--color-text: #f0f4f8;               /* Near-white with cool tint */
+--color-text-muted: #8a9bae;         /* Blue-gray for secondary text */
+--color-text-subtle: #5a6a7a;        /* Subtle blue-gray for hints */
 
 /* Border colors */
---color-border: #2a2a2a;             /* Default borders */
---color-border-hover: #3a3a3a;       /* Borders on hover */
+--color-border: #1e2a3a;             /* Dark blue-gray borders */
+--color-border-hover: #2a3a4a;       /* Borders on hover */
 
-/* Accent colors */
---color-accent: #c45a2c;             /* Primary CTA (burnt orange) */
---color-accent-hover: #d46a3c;       /* CTA hover state */
---color-accent-active: #b44a1c;      /* CTA pressed state */
+/* Accent colors - warm orange for CTAs */
+--color-accent: #e05a2b;             /* Warm orange - primary CTA */
+--color-accent-hover: #f06a3b;       /* Accent hover state */
+--color-accent-active: #c04a1b;      /* Accent active/pressed state */
 
-/* Secondary accent */
---color-secondary: #3a4a5a;          /* Cool-toned subtle accent */
---color-secondary-hover: #4a5a6a;    /* Secondary hover */
+/* Brand colors - logo blue */
+--color-brand: #2d9cdb;              /* Logo blue - for highlights */
+--color-brand-light: #56b3e6;        /* Lighter brand blue */
+--color-brand-dark: #1a7ab8;         /* Darker brand blue */
+
+/* Secondary accent - uses brand blue */
+--color-secondary: #2d9cdb;          /* Brand blue as secondary */
+--color-secondary-hover: #56b3e6;    /* Secondary hover */
 
 /* Focus states (accessibility) */
---color-focus: #5a9fd4;              /* Focus ring color */
---color-focus-outline: rgba(90, 159, 212, 0.5);  /* Focus glow */
+--color-focus: #2d9cdb;              /* Focus ring - brand blue */
+--color-focus-outline: rgba(45, 156, 219, 0.4);  /* Focus glow */
 ```
 
 ### Typography
