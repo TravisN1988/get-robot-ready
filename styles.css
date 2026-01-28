@@ -237,19 +237,19 @@ ul, ol {
 }
 
 .btn--primary {
-  background-color: var(--color-accent);
+  background-color: var(--color-brand);
   color: var(--color-text);
-  border-color: var(--color-accent);
+  border-color: var(--color-brand);
 }
 
 .btn--primary:hover {
-  background-color: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
+  background-color: var(--color-brand-light);
+  border-color: var(--color-brand-light);
 }
 
 .btn--primary:active {
-  background-color: var(--color-accent-active);
-  border-color: var(--color-accent-active);
+  background-color: var(--color-brand-dark);
+  border-color: var(--color-brand-dark);
 }
 
 .btn--secondary {
@@ -306,7 +306,7 @@ ul, ol {
 }
 
 .nav__logo-img {
-  height: 36px;
+  height: 48px;
   width: auto;
 }
 
