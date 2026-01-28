@@ -306,8 +306,9 @@ ul, ol {
 }
 
 .nav__logo-img {
-  height: 60px;
+  height: 160px;
   width: auto;
+  margin: -44px 0;
 }
 
 .nav__links {
