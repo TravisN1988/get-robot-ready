@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RobotReady is the trusted authority for humanoid robotics readiness, helping organizations make confident decisions about timing, deployment, and operational changes.">
+  <title>RobotReady | Humanoid Robotics Readiness Consulting</title>
+  <link rel="stylesheet" href="styles.css">
+  <!--
+    FONTS: Using system font stack for performance.
+    To use Inter, uncomment the line below and update --font-sans in styles.css
+  -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__container">
+      <!-- LOGO PLACEHOLDER: Replace this div with an <img> tag pointing to your logo asset -->
+      <!-- Example: <img src="assets/logo.svg" alt="RobotReady" class="nav__logo-img"> -->
+      <a href="#" class="nav__logo" aria-label="RobotReady home">
+        <span class="nav__logo-text">RobotReady</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#expertise" class="nav__link">Expertise</a>
+        <a href="#insights" class="nav__link">Insights</a>
+      </div>
+
+      <a href="#contact" class="btn btn--primary nav__cta">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="about">
+      <!--
+        HERO BACKGROUND:
+        The background image is set via CSS in styles.css (.hero::before)
+        Replace the placeholder gradient with your own image:
+        background-image: linear-gradient(...), url('assets/hero-bg.jpg');
+      -->
+      <div class="hero__content">
+        <h1 class="hero__headline">
+          RobotReady is the trusted authority for humanoid robotics readiness, helping organizations make confident decisions about timing, deployment, and the operational changes required for successful deployment.
+        </h1>
+        <p class="hero__tagline">Be ready before you deploy.</p>
+        <div class="hero__ctas">
+          <a href="#approach" class="btn btn--secondary">Learn More</a>
+          <a href="#contact" class="btn btn--primary">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         OUR APPROACH SECTION
+         ============================================ -->
+    <section class="section approach" id="approach">
+      <div class="container">
+        <h2 class="section__title">Our Approach</h2>
+        <div class="approach__grid">
+
+          <div class="approach__tile">
+            <div class="approach__icon" aria-hidden="true">
+              <!-- ICON PLACEHOLDER: Assess - clipboard/checklist concept -->
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="4" width="24" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M14 16h12M14 22h12M14 28h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="20" cy="10" r="2" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="approach__title">Assess</h3>
+            <p class="approach__description">Evaluate operational readiness across facility, process, people, and systems.</p>
+          </div>
+
+          <div class="approach__tile">
+            <div class="approach__icon" aria-hidden="true">
+              <!-- ICON PLACEHOLDER: Plan - route/pathway concept -->
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 32L16 24L24 28L32 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="8" cy="32" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="8" r="3" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="approach__title">Plan</h3>
+            <p class="approach__description">Define the deployment pathway and sequence operational changes.</p>
+          </div>
+
+          <div class="approach__tile">
+            <div class="approach__icon" aria-hidden="true">
+              <!-- ICON PLACEHOLDER: Guide - compass/direction concept -->
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/>
+                <polygon points="20,10 24,20 20,30 16,20" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="approach__title">Guide</h3>
+            <p class="approach__description">Support execution, change management, and organizational alignment.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         WHAT WE DO SECTION
+         ============================================ -->
+    <section class="section what-we-do" id="expertise">
+      <div class="container">
+        <h2 class="section__title">What We Do</h2>
+        <ul class="what-we-do__list">
+          <li>Humanoid readiness assessment across facility, process, people, safety, and controls</li>
+          <li>Deployment planning and operational change roadmapping</li>
+          <li>Vendor-agnostic guidance with no robot sales or OEM preference</li>
+          <li>Risk framing and decision support around timing and rollout</li>
+          <li>Internal alignment across operations, engineering, safety, IT/OT, and quality</li>
+          <li>Defining what to measure during pilots to learn quickly and scale safely</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================
+         WHO IT'S FOR SECTION
+         ============================================ -->
+    <section class="section who-its-for">
+      <div class="container">
+        <h2 class="section__title">Who It's For</h2>
+        <div class="who-its-for__grid">
+
+          <div class="who-its-for__column">
+            <h3 class="who-its-for__heading">Manufacturing & Operations Leaders</h3>
+            <p class="who-its-for__description">
+              Operations, engineering, continuous improvement, plant leadership, safety, and IT/OT teams evaluating humanoid deployment.
+            </p>
+          </div>
+
+          <div class="who-its-for__column">
+            <h3 class="who-its-for__heading">Robotics OEMs & Innovators</h3>
+            <p class="who-its-for__description">
+              Teams seeking readiness feedback loops and clear pilot success criteria for customer deployments.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CREDIBILITY STRIP
+         ============================================ -->
+    <section class="credibility">
+      <div class="container">
+        <ul class="credibility__list">
+          <li class="credibility__item">Product-agnostic</li>
+          <li class="credibility__item">Readiness-first</li>
+          <li class="credibility__item">Operator-aware</li>
+          <li class="credibility__item">Deployment decision support</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA BAND
+         ============================================ -->
+    <section class="cta-band" id="insights">
+      <div class="container">
+        <h2 class="cta-band__headline">Assess readiness. Reduce surprises.</h2>
+        <p class="cta-band__text">A short engagement can clarify timing, risks, and required operational changes.</p>
+        <a href="#contact" class="btn btn--primary">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section__title">Get in Touch</h2>
+        <p class="contact__intro">Tell us what you're evaluating and what constraints you're facing.</p>
+
+        <!-- HUBSPOT FORM CONTAINER -->
+        <div id="hubspot-form" class="contact__hubspot">
+          <!--
+            ============================================
+            HUBSPOT EMBED INSTRUCTIONS:
+            ============================================
+            1. Log into your HubSpot account
+            2. Navigate to Marketing > Lead Capture > Forms
+            3. Create or select your form
+            4. Click "Share" and copy the embed code
+            5. Paste the embed code inside this div, replacing the fallback form below
+
+            Example HubSpot embed code:
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+                region: "na1",
+                portalId: "YOUR_PORTAL_ID",
+                formId: "YOUR_FORM_ID"
+              });
+            </script>
+            ============================================
+          -->
+
+          <!-- FALLBACK FORM: Remove this form once HubSpot embed is added -->
+          <form class="contact__form contact__form--fallback" action="#" method="POST">
+            <p class="contact__form-notice">
+              <em>This is a visual fallback form. It will be replaced by the HubSpot embed.</em>
+            </p>
+            <div class="form__group">
+              <label for="name" class="form__label">Name</label>
+              <input type="text" id="name" name="name" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email</label>
+              <input type="email" id="email" name="email" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="company" class="form__label">Company</label>
+              <input type="text" id="company" name="company" class="form__input">
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Message</label>
+              <textarea id="message" name="message" class="form__input form__textarea" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form>
+          <!-- END FALLBACK FORM -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__copyright">&copy; 2025 RobotReady. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="mailto:hello@getrobotready.com" class="footer__link">hello@getrobotready.com</a>
+        <a href="https://linkedin.com/company/robotready" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="RobotReady on LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Smooth scroll behavior for anchor links -->
+  <script>
+    // Smooth scroll polyfill for older browsers
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
